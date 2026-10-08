@@ -61,7 +61,7 @@ A su vez, también existen distintas puertas especiales para permitir el acceso 
 
 ## ¿Cómo funciona un anticheat a nivel de kernel?
 
-El anticheat a nivel de kernel comenzó a utilizarse ya que los procesos en modo usuario están por debajo del kernel a nivel de privilegios, por lo tanto, podían ser burlados fácilmente por trampas a nivel de controlador de kernel o hipervisor, por ejemplo, llamaban a ReadProcessMemory y podía falsificarse mediante hooking[^1] en kernel.
+El anticheat a nivel de kernel comenzó a utilizarse ya que los procesos en modo usuario están por debajo del kernel a nivel de privilegios, por lo tanto, podían ser burlados fácilmente por trampas a nivel de controlador de kernel o hipervisor, por ejemplo, llamaban a ReadProcessMemory y podía falsificarse mediante hooking en kernel.
 
 Al operar en el ring 0, el anticheat tiene acceso desde el inicio del sistema operativo. El funcionamiento es el siguiente:
 
@@ -93,7 +93,7 @@ Vanguard combina un controlador en modo kernel con una validación continua de l
 
 **¿Cómo funciona Vanguard?**
 
-Carga vgk.sys al encender el sistema, esto funciona como un controlador de boot-start, lo que quiere decir que windows lo carga antes de que la mayoría del sistema esté inicializado. Utiliza IOMMU2, comprobando exactamente qué dispositivo se ha conectado y si la certificación es verdadera. En el caso de que no pueda comprobarlo, y efectivamente concluya que es software para hacer trampas, las protecciones de este sistema harán que los drivers del dispositivo empiecen a fallar.
+Carga vgk.sys al encender el sistema, esto funciona como un controlador de boot-start, lo que quiere decir que windows lo carga antes de que la mayoría del sistema esté inicializado. Utiliza IOMMU, comprobando exactamente qué dispositivo se ha conectado y si la certificación es verdadera. En el caso de que no pueda comprobarlo, y efectivamente concluya que es software para hacer trampas, las protecciones de este sistema harán que los drivers del dispositivo empiecen a fallar.
 
 ### Ricochet
 
