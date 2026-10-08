@@ -1,6 +1,6 @@
 Investigación kernels
 
-08/10/2026 Jorge Menéndez
+08/10/2026 Jorge Menéndez, Diego Bermejo, Alejandro Gómez y Jostyn Mesías.
 
 # Introducción
 
