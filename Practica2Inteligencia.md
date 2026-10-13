@@ -65,7 +65,7 @@ han identificado los siguientes IOCs.
 
 Al consultar el hash en VirusTotal, se da una tasa de detección de 6/67.
 
-## ![](/media/image2.png){width="6.260416666666667in" height="3.1145833333333335in"}Clasificación del Motor de Antivirus
+Clasificación del Motor de Antivirus
 
 El malware es identificado bajo la familia trojan.beog/chinad. Entre las
 firmas más destacadas se encuentran:
