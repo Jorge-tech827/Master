@@ -7,8 +7,7 @@ any.run,
 Durante la ejecución, se puede observar el procesamiento de un archivo
 comprimido en formato ZIP. Tras la descompresión usamos el loader para
 realizar la extracción de sus firmas y
-hashes.![](/media/image.png){width="6.260416666666667in"
-height="3.2395833333333335in"}
+hashes.![](/media/image.png)
 
 # Identificar IOCs (IPs, dominios, hashes) de campañas activas.
 
